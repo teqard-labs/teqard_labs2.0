@@ -1,11 +1,14 @@
 {
-  "name": "hoobank",
+  "name": "teqard_labs2.0",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://teqard-labs.github.io/teqard_labs2.0/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
