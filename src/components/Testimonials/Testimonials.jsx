@@ -69,7 +69,7 @@ const Testimonials = () => (
       >
         {/* service block */}
         <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-gray-900 mb-4">
+          <div className="inline-block text-blue-700 mb-4">
             {/* icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ const Testimonials = () => (
       >
         {/* service block */}
         <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-gray-900 mb-4">
+          <div className="inline-block text-blue-700 mb-4">
             {/* icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +142,7 @@ const Testimonials = () => (
       >
         {/* service block */}
         <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-gray-900 mb-4">
+          <div className="inline-block text-blue-700 mb-4">
             {/* icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +177,7 @@ const Testimonials = () => (
       >
         {/* service block */}
         <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-gray-900 mb-4">
+          <div className="inline-block text-blue-700 mb-4">
             {/* icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -214,7 +214,7 @@ const Testimonials = () => (
       >
         {/* service block */}
         <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-gray-900 mb-4">
+          <div className="inline-block text-blue-700 mb-4">
             {/* icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@ const Testimonials = () => (
       >
         {/* service block */}
         <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-gray-900 mb-4">
+          <div className="inline-block text-blue-700 mb-4">
             {/* icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
