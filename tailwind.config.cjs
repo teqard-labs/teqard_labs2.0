@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
+  darkMode: "class",
   mode: "jit",
   theme: {
     extend: {
@@ -12,6 +13,12 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+      },
+      backgroundColor: {
+        // Light theme background color
+        "light-bg": "#ffffff", // Or any other light background color
+        // Dark theme background color
+        "dark-bg": "#00040f", // Or any other dark background color
       },
     },
     screens: {

@@ -1,10 +1,15 @@
 import { features } from "../../constants";
 import styles, { layout } from "../../style";
 import Button from "../Button/Button";
+import { useTheme } from "../ThemeContext"
 
-const FeatureCard = ({ icon, title, content, index }) => (
+const FeatureCard = ({ icon, title, content, index }) => {
+  const { theme } = useTheme();
+  const textColor = theme === 'light' ? 'text-black' : 'text-white';
+
+  return(
   <div
-    className={`flex flex-row p-6 rounded-[20px] ${
+    className={`flex flex-row p-6 rounded-[20px] ${textColor} ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } feature-card`}
   >
@@ -14,19 +19,22 @@ const FeatureCard = ({ icon, title, content, index }) => (
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
-      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
+      <h4 className={`font-poppins font-semibold text-[18px] leading-[23.4px] mb-1`}>
         {title}
       </h4>
-      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
+      <p className={`font-poppins font-normal text-[16px] leading-[24px]`}>
         {content}
       </p>
     </div>
   </div>
-);
+)};
 
-const Business = () => (
+const Business = () => {
+  const { theme } = useTheme();
+  const textColor = theme === 'light' ? 'text-black' : 'text-white';
+  return(
   <section id="features" className={layout.section}>
-    <div className={layout.sectionInfo}>
+    <div className={`${layout.sectionInfo} ${textColor}`}>
       <h2 className={styles.heading2}>
         You do the business, <br className="sm:block hidden" /> we’ll handle the
         money.
@@ -44,6 +52,6 @@ const Business = () => (
       ))}
     </div>
   </section>
-);
+)};
 
 export default Business;

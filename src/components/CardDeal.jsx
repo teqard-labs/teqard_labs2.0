@@ -1,10 +1,14 @@
 import { card } from "../assets";
 import styles, { layout } from "../style";
 import Button from "./Button/Button";
+import { useTheme } from "./ThemeContext"
 
-const CardDeal = () => (
+const CardDeal = () => {
+  const { theme } = useTheme();
+  const textColor = theme === 'light' ? 'text-black' : 'text-white';
+  return(
   <section className={layout.section}>
-    <div className={layout.sectionInfo}>
+    <div className={`${layout.sectionInfo} ${textColor}`}>
       <h2 className={styles.heading2}>
         Find a better card deal <br className="sm:block hidden" /> in few easy
         steps.
@@ -21,6 +25,6 @@ const CardDeal = () => (
       <img src={card} alt="billing" className="w-[100%] h-[100%]" />
     </div>
   </section>
-);
+)};
 
 export default CardDeal;

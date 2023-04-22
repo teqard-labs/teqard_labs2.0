@@ -1,11 +1,15 @@
 import { feedback } from "../../constants";
 import styles from "../../style";
 import FeedbackCard from "./FeedbackCard";
+import { useTheme } from "../ThemeContext"
 
-const Testimonials = () => (
+const Testimonials = () => {
+  const { theme } = useTheme();
+  const textColor = theme === 'light' ? 'text-black' : 'text-white';
+  return(
   <section
     id="clients"
-    className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
+    className={`${styles.paddingY} ${styles.flexCenter} ${textColor} flex-col relative `}
   >
     <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
 
@@ -27,6 +31,6 @@ const Testimonials = () => (
       ))}
     </div>
   </section>
-);
+)};
 
 export default Testimonials;

@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { close, logo, menu } from "../../assets";
 import { navLinks } from "../../constants";
+import ThemeToggleButton from "../ThemeToggleButton";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -19,10 +20,18 @@ const Navbar = () => {
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
+            
           >
+            
             <a href={`#${nav.id}`}>{nav.title}</a>
+             
+            
           </li>
+          
+          
         ))}
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ThemeToggleButton/>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">

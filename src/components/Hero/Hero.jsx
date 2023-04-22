@@ -2,8 +2,12 @@ import styles from "../../style";
 import { discount, robot } from "../../assets";
 import GetStarted from "./GetStarted";
 import Carousel from 'nuka-carousel';
+import { useTheme } from "../ThemeContext"
 
 const Hero = () => {
+  const { theme } = useTheme();
+  const textColor = theme === 'light' ? 'text-black' : 'text-white';
+
   return (
     <section
       id="home"
@@ -21,7 +25,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
+          <h1 className={`flex-1 font-poppins font-semibold ss:text-[72px] ${textColor} text-[52px]  ss:leading-[100.8px] leading-[75px]`}>
             The Next <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Generation</span>{" "}
           </h1>
@@ -30,10 +34,10 @@ const Hero = () => {
           </div>
         </div>
 
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
+        <h1 className={`font-poppins font-semibold ss:text-[68px] text-[52px] ${textColor} ss:leading-[100.8px] leading-[75px] w-full`}>
           Payment Method.
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <p className={`${textColor} ${styles.paragraph}  max-w-[470px] mt-5`}>
           Our team of experts uses a methodology to identify the credit cards
           most likely to fit your needs. We examine annual percentage rates,
           annual fees.
@@ -46,7 +50,7 @@ const Hero = () => {
         <Carousel
           wrapAround={true}
           autoplay={true}
-          autoplayInterval={3000}
+          autoplayInterval={4000}
           renderCenterLeftControls={({ previousSlide }) => null}
           renderCenterRightControls={({ nextSlide }) => null}
           renderBottomCenterControls={({ currentSlide }) => null}

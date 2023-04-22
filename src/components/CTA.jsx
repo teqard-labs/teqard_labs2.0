@@ -1,11 +1,15 @@
 import styles from "../style";
 import Button from "./Button/Button";
+import { useTheme } from "./ThemeContext"
 
-const CTA = () => (
+const CTA = () => {
+  const { theme } = useTheme();
+  const textColor = theme === 'light' ? 'text-black' : 'text-white';
+  return(
   <section
-    className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
+    className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col dark:bg-dark-bg bg-white rounded-[20px] box-shadow`}
   >
-    <div className="flex-1 flex flex-col">
+    <div className={`flex-1 flex flex-col ${textColor}`}>
       <h2 className={styles.heading2}>Let’s try our service now!</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Everything you need to accept card payments and grow your business
@@ -17,6 +21,6 @@ const CTA = () => (
       <Button />
     </div>
   </section>
-);
+)};
 
 export default CTA;

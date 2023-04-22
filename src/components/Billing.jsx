@@ -1,7 +1,12 @@
 import { apple, bill, google } from "../assets";
 import styles, { layout } from "../style";
+import { useTheme } from "./ThemeContext"
 
-const Billing = () => (
+const Billing = () => {
+
+  const { theme } = useTheme();
+  const textColor = theme === 'light' ? 'text-black' : 'text-white';
+  return(
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
       <img
@@ -16,7 +21,7 @@ const Billing = () => (
       {/* gradient end */}
     </div>
 
-    <div className={layout.sectionInfo}>
+    <div className={`${layout.sectionInfo} ${textColor}`}>
       <h2 className={styles.heading2}>
         Easily control your <br className="sm:block hidden" /> billing &
         invoicing
@@ -40,6 +45,6 @@ const Billing = () => (
       </div>
     </div>
   </section>
-);
+)};
 
 export default Billing;
