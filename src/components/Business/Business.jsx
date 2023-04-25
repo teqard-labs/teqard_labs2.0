@@ -36,13 +36,10 @@ const Business = () => {
   <section id="features" className={layout.section}>
     <div className={`${layout.sectionInfo} ${textColor}`}>
       <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle the
-        money.
+      The future is digital, <br className="sm:block hidden" /> let us take you there.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds of
-        credit cards on the market.
+      we plays a crucial role in enabling businesses to stay competitive and thrive in today's digital landscape.
       </p>
       <Button styles={`mt-10`} />
     </div>

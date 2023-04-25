@@ -10,10 +10,9 @@ const CTA = () => {
     className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col dark:bg-dark-bg bg-white rounded-[20px] box-shadow`}
   >
     <div className={`flex-1 flex flex-col ${textColor}`}>
-      <h2 className={styles.heading2}>Let’s try our service now!</h2>
+      <h2 className={styles.heading2}>Let’s try our services </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Everything you need to accept card payments and grow your business
-        anywhere on the planet.
+      We bring you powerful advantages to navigate your digital transformation
       </p>
     </div>
 

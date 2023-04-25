@@ -56,7 +56,7 @@ const Testimonials = () => {
         />
       </svg>
       <p className="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">
-        Save time managing advertising &amp; Content for your business.
+      Powering your  &amp; digital transformation.
       </p>
     </header>
     {/* End heading */}
@@ -87,11 +87,10 @@ const Testimonials = () => {
             </svg>
           </div>
           <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-            SEO Services
+          IT Services
           </h3>
           <p className="text-gray-500">
-            This is a wider card with supporting text below as a natural
-            content.
+          Comprehensive support for businesses IT infrastructure and systems
           </p>
         </div>
         {/* end service block */}
@@ -124,11 +123,10 @@ const Testimonials = () => {
             </svg>
           </div>
           <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-            Social Content
+          Network Security
           </h3>
           <p className="text-gray-500">
-            This is a wider card with supporting text below as a natural
-            content.
+          Protection of networks and data from unauthorized access, misuse, or damage, using firewalls, intrusion detection systems.
           </p>
         </div>
         {/* end service block */}
@@ -161,11 +159,10 @@ const Testimonials = () => {
             </svg>
           </div>
           <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-            Creative ads
+          IT Consulting
           </h3>
           <p className="text-gray-500">
-            This is a wider card with supporting text below as a natural
-            content.
+          Assisting businesses in planning, implementing, and optimizing their IT infrastructure and strategies.
           </p>
         </div>
         {/* end service block */}
@@ -196,11 +193,10 @@ const Testimonials = () => {
             </svg>
           </div>
           <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-            Brand Identity
+          Software Development
           </h3>
           <p className="text-gray-500">
-            This is a wider card with supporting text below as a natural
-            content.
+          Designing, coding, testing, and deploying custom software applications to meet specific business requirements and enhance productivity.
           </p>
         </div>
         {/* end service block */}
@@ -232,11 +228,10 @@ const Testimonials = () => {
             </svg>
           </div>
           <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-            Budget &amp; Marketing
+          Technical Support
           </h3>
           <p className="text-gray-500">
-            This is a wider card with supporting text below as a natural
-            content.
+          Troubleshooting and resolving technical issues, either remotely or on-site, to maintain optimal performance and minimize downtime.
           </p>
         </div>
         {/* end service block */}
@@ -268,11 +263,10 @@ const Testimonials = () => {
             </svg>
           </div>
           <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-            Optimize conversions
+          Systems Integration 
           </h3>
           <p className="text-gray-500">
-            This is a wider card with supporting text below as a natural
-            content.
+          Connecting and synchronizing various IT systems, software, and databases to ensure seamless and efficient data flow.
           </p>
         </div>
         {/* end service block */}
