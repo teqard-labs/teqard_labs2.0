@@ -15,27 +15,26 @@ const Footer = () => {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style dangerouslySetInnerHTML={{__html: "\n  .icon::after{\n  content: '';\n  display: block;\n  position: absolute;\n  border-top: 23px solid transparent;\n  border-bottom: 17px solid transparent;\n  border-left: 12px solid #3182ce;\n  left: 100%;\n  top: 0;\n}\n  " }} />
-        <form action className="form bg-white p-40 my-10 relative ">
-          <div className="icon bg-blue-gradient text-white w-6 h-6 absolute flex items-center justify-center p-5" style={{left: '-40px'}}><i className="fal fa-phone-volume fa-fw text-2xl transform -rotate-45" /></div>
-          <h3 className="text-4xl text-gray-900 font-semibold pb-10">Let us call you!</h3>
+        <form action className="form bg-white dark:bg-[#00040f] p-40 my-10 relative ">
+          <h3 className="text-4xl text-secondary dark:text-white  font-semibold pb-10 font-poppins">Let us call you!</h3>
           
           <div className="flex space-x-5 mt-3">
-            <input type="text" name id placeholder="Your Name" className="border p-2  w-1/2" />
-            <input type="tel" name id placeholder="Your Number" className="border p-2 w-1/2" />
+            <input type="text" name id placeholder="Your Name" className="border p-2  w-1/2 dark:bg-[#00040f] font-poppins" />
+            <input type="tel" name id placeholder="Your Number" className="border p-2 w-1/2 dark:bg-[#00040f] font-poppins" />
           </div>
-          <input type="email" name id placeholder="Your Email" className="border p-2 w-full mt-3" />
-          <textarea name id cols={10} rows={3} placeholder="Tell us about desired property" className="border p-2 mt-3 w-full" defaultValue={""} />
-          <p className="font-bold text-sm mt-3">GDPR Agreement *</p>
+          <input type="email" name id placeholder="Your Email" className="border p-2 w-full mt-3 dark:bg-[#00040f] font-poppins" />
+          <textarea name id cols={10} rows={3} placeholder="Tell us about desired property" className="border p-2 mt-3 w-full dark:bg-[#00040f] font-poppins" defaultValue={""} />
+          <p className="font-bold text-sm mt-3 dark:text-white font-poppins">GDPR Agreement *</p>
           <div className="flex items-baseline space-x-2 mt-2">
             <input type="checkbox" name id className="inline-block" />
-            <p className="text-gray-600 text-sm">I consent to having this website store my submitted information so they can respond to my inquiry.</p>
+            <p className="text-secondary dark:text-white text-sm font-poppins">I consent to having this website store my submitted information so they can respond to my inquiry.</p>
           </div>
-          <input type="submit" defaultValue="Submit" className="w-full mt-6 bg-blue-gradient hover:bg-black text-white font-semibold p-3" />
+          <input type="submit" defaultValue="Submit" className="w-full mt-6 bg-secondary  hover:bg-white hover:text-[#00040f] text-white font-semibold p-3" />
         </form>
       </div>
 
-    <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-      <p className={`font-poppins font-normal text-center text-[18px] leading-[27px]${textColor}`}>
+    <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45] dark:border-t-white">
+      <p className={`font-poppins font-normal text-center text-[18px] leading-[27px]${textColor} dark:text-white`}>
         Copyright Ⓒ 2022 TeqardLabs. All Rights Reserved.
       </p>
 
