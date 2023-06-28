@@ -23,7 +23,7 @@ const Billing = () => {
 
     <div className={`${layout.sectionInfo} ${textColor}`}>
       <h2 className={styles.heading2}>
-       we build <br className="sm:block hidden" /> greater futures
+       We build <br className="sm:block hidden" /> greater futures
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
       Teqard labs is an IT services and business solutions 
