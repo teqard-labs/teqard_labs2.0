@@ -9,7 +9,7 @@ const Footer = () => {
   const iconColor = theme === 'light' ? 'invert-1' : '';
   const iconBright = theme === 'light' ? 'brightness-0' : '';
   return(
-  <section className={`${styles.flexCenter} py-5 flex-col`}>
+  <section id="footer" className={`${styles.flexCenter} py-5 flex-col`}>
     <div classname="w-1/4 py-5">
         {/* component */}
         <meta charSet="UTF-8" />
