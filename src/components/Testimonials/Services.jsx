@@ -9,7 +9,7 @@ const Testimonials = () => {
   return(
   <section
     id="clients"
-    className={`${styles.paddingY} ${styles.flexCenter} ${textColor} flex-col relative `}
+    className={`py-5 ${styles.flexCenter} ${textColor} flex-col relative `}
   >
     <div
   id="services"
