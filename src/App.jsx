@@ -5,7 +5,6 @@ import {
   Business,
   CardDeal,
   Clients,
-  CTA,
   Footer,
   Navbar,
   Stats,

@@ -9,7 +9,7 @@ const Testimonials = () => {
   return(
   <section
     id="clients"
-    className={`${styles.paddingY} ${styles.flexCenter} ${textColor} flex-col relative `}
+    className={`py-5 ${styles.flexCenter} ${textColor} flex-col relative `}
   >
     <div
   id="services"
@@ -55,7 +55,7 @@ const Testimonials = () => {
           style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
         />
       </svg>
-      <p className="text-gray-500 font-poppins leading-relaxed font-light font-poppins text-xl mx-auto pb-2 dark:text-white">
+      <p className="text-gray-500 font-poppins leading-relaxed font-light text-xl mx-auto pb-2 dark:text-white">
       Powering your  &amp; digital transformation.
       </p>
     </header>
@@ -89,7 +89,7 @@ const Testimonials = () => {
           <h3 className="text-lg leading-normal mb-2 font-semibold font-poppins text-black dark:text-white">
           IT Services
           </h3>
-          <p className="text-gray-500 font-poppins font-poppins dark:text-white">
+          <p className="text-gray-500 font-poppins dark:text-white">
           Comprehensive support for businesses IT infrastructure and systems
           </p>
         </div>

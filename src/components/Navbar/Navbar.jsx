@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { close, logo, menu } from "../../assets";
 import { navLinks } from "../../constants";
 import ThemeToggleButton from "../ThemeToggleButton";
@@ -9,7 +8,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav className="w-full flex justify-between items-center navbar">
       <img src={logo} alt="teqard" className="w-[10vw] h-[13vh]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -18,20 +17,17 @@ const Navbar = () => {
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
               active === nav.title ? "text-white" : "text-dimWhite"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"} ${
+              active === nav.title ? "active-item" : ""
+            }`}
             onClick={() => setActive(nav.title)}
-            
           >
-            
             <a href={`#${nav.id}`}>{nav.title}</a>
-             
-            
           </li>
-          
-          
         ))}
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ThemeToggleButton/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ThemeToggleButton />
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -52,8 +48,10 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-black" : "text-dimblack"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                  active === nav.title ? "text-white" : "text-dimblack"
+                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"} ${
+                  active === nav.title ? "active-item" : ""
+                }`}
                 onClick={() => setActive(nav.title)}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
