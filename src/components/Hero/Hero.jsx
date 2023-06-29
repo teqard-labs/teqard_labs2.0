@@ -1,6 +1,5 @@
 import styles from "../../style";
 import { discount, robot } from "../../assets";
-import GetStarted from "./GetStarted";
 import Carousel from 'nuka-carousel';
 import { useTheme } from "../ThemeContext"
 
@@ -21,10 +20,9 @@ const Hero = () => {
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className={`flex-1 font-poppins font-semibold ss:text-[72px] ${textColor} text-[52px]  ss:leading-[100.8px] leading-[75px]`}>
           Unleashing the <br className="sm:block hidden" />{" "}
-            <span className={theme === "dark" ? "text-gradient": "text-gradient-light"}> Potential</span>{" "}
+            <span className={theme === "dark" ? "text-secondary": "text-secondary"}> Potential</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
           </div>
         </div>
 
@@ -62,7 +60,6 @@ const Hero = () => {
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
       </div>
     </section>
   );
