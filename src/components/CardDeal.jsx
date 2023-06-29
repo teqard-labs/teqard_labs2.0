@@ -10,7 +10,7 @@ const CardDeal = () => {
   <section className={layout.section}>
     <div className={`${layout.sectionInfo} ${textColor}`}>
       <h2 className={styles.heading2}>
-      we transforms businesses <br className="sm:block hidden" /> through technology.
+      We transforms businesses <br className="sm:block hidden" /> through technology.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
       Our expertise lies in guiding businesses through digital transformation and achieving tangible growth, leveraging 

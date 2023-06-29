@@ -12,10 +12,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "i": "^0.3.7",
     "nuka-carousel": "^6.0.1",
+    "pnpm": "^8.6.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-responsive-carousel": "^3.2.23"
+    "react-responsive-carousel": "^3.2.23",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
