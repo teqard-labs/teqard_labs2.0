@@ -1,6 +1,5 @@
 import { features } from "../../constants";
 import styles, { layout } from "../../style";
-import Button from "../Button/Button";
 import { useTheme } from "../ThemeContext"
 
 const FeatureCard = ({ icon, title, content, index }) => {
@@ -36,12 +35,11 @@ const Business = () => {
   <section id="features" className={layout.section}>
     <div className={`${layout.sectionInfo} ${textColor}`}>
       <h2 className={styles.heading2}>
-      The future is digital, <br className="sm:block hidden" /> let us take you there.
+      At Teqard Labs, <br className="sm:block hidden" />we are committed to building
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      we plays a crucial role in enabling businesses to stay competitive and thrive in today's digital landscape.
+ futuristic IoT solutions that prioritize community value creation. Our mission is to leverage the power of automation, robotics, custom electronics, and touchless solutions to revolutionize industries and improve the lives of individuals.
       </p>
-      <Button styles={`mt-10`} />
     </div>
     <div className={`${layout.sectionImg} flex-col`}>
       {features.map((feature, index) => (
