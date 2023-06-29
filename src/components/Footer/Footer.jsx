@@ -10,12 +10,12 @@ const Footer = () => {
   const iconBright = theme === 'light' ? 'brightness-0' : '';
   return(
   <section className={`${styles.flexCenter} py-5 flex-col`}>
-    <div classname="w-1/4 py-5">
+    <div classname="w-1/4 py-5 ">
         {/* component */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style dangerouslySetInnerHTML={{__html: "\n  .icon::after{\n  content: '';\n  display: block;\n  position: absolute;\n  border-top: 23px solid transparent;\n  border-bottom: 17px solid transparent;\n  border-left: 12px solid #3182ce;\n  left: 100%;\n  top: 0;\n}\n  " }} />
-        <form action className="form bg-white dark:bg-[#00040f] p-5 my-5 relative ">
+        <form action className="form bg-white dark:bg-[#00040f] p-5 mt-5 mb-20 relative ">
           <h3 className="text-4xl text-secondary dark:text-white  font-semibold pb-10 font-poppins">Let us call you!</h3>
           
           <div className="flex space-x-5 mt-3">
