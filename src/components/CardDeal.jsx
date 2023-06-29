@@ -1,5 +1,4 @@
 import styles, { layout } from "../style";
-import Button from "./Button/Button";
 import { useTheme } from "./ThemeContext";
 import techImage from "../assets/tech.jpg";
 
@@ -15,10 +14,12 @@ const CardDeal = () => {
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Our expertise specializes in delivering innovative solutions that optimize operational efficiency and empower organizations to adapt to the ever-evolving digital landscape, all backed by our deep industry expertise and contextual understanding.
         </p>
-        <Button styles={`mt-10`} />
       </div>
       <div className={layout.sectionImg}>
+      <div class="rounded-lg overflow-hidden relative">
         <img src={techImage} alt="Technology" className="w-[100%] h-[100%]" />
+        <div class="absolute inset-0 bg-gradient-to-b from-secondary to-black opacity-70"></div>
+</div>
       </div>
     </section>
   );

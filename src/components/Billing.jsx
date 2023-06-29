@@ -9,12 +9,10 @@ const Billing = () => {
   return (
     <section id="product" className={layout.sectionReverse}>
       <div className={layout.sectionImgReverse}>
-        <img src={tech2Image} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
-
-        {/* gradient start */}
-        <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
-        <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full blue__gradient" />
-        {/* gradient end */}
+      <div class="rounded-lg overflow-hidden relative">
+  <img src={tech2Image} alt="billing" class="w-full h-full relative z-5" />
+  <div class="absolute inset-0 bg-gradient-to-b from-secondary to-black opacity-70"></div>
+</div>
       </div>
 
       <div className={`${layout.sectionInfo} ${textColor}`}>
