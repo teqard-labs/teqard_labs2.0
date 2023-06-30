@@ -1,5 +1,5 @@
 import styles from "../../style";
-import { discount, robot } from "../../assets";
+import { pic1,pic2,pic3 } from "../../assets";
 import Carousel from 'nuka-carousel';
 import { useTheme } from "../ThemeContext"
 
@@ -44,11 +44,10 @@ const Hero = () => {
           renderCenterLeftControls={({ previousSlide }) => null}
           renderCenterRightControls={({ nextSlide }) => null}
           renderBottomCenterControls={({ currentSlide }) => null}
-          className="w-[100%] h-[100%] relative z-[5]"
+          className="w-[100%] h-[100%] relative z-[5] pl-28"
         >
-          <img src={robot} alt="Image 1" />
-          <img src={robot} alt="Image 2" />
-          <img src={robot} alt="Image 3" />
+          <img src={pic1} className="w-[55%] rounded-lg opacity-70" alt="Image 1" />
+          <img src={pic3} className="w-[55%] rounded-lg opacity-70"  alt="Image 3" />
           {/* Add more slides as desired */}
         </Carousel>
 
