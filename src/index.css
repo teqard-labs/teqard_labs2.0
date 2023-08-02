@@ -165,3 +165,66 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+/* Add this to your CSS file or style section */
+.enter-from-left-light,
+.enter-from-left-dark {
+  animation: enterFromLeftAnimation 1s forwards;
+}
+
+@keyframes enterFromLeftAnimation {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Add this to your CSS file or style section */
+.fade-in-enter-from-right {
+  animation: fadeInEnterFromRightAnimation 1s forwards;
+}
+
+@keyframes fadeInEnterFromRightAnimation {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottomUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
