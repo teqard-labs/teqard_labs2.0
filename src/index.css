@@ -134,6 +134,7 @@
   }
 }
 
+
 .feature-card:hover {
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
@@ -218,6 +219,8 @@
     opacity: 1;
   }
 }
+
+
 @keyframes fadeInRight {
   from {
     opacity: 0;
@@ -227,4 +230,15 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+
+.animate {
+  /* Add your fadeInRight animation styles here */
+  animation: fadeInRight 0.3s ease both;
+}
+
+.animate-fadeIn {
+  /* Add your fadeIn animation styles here */
+  animation: fadeIn 1s ease both;
 }
