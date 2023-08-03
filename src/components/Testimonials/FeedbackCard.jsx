@@ -1,3 +1,4 @@
+import React from "react";
 import { quotes } from "../../assets";
 import { useTheme } from "../ThemeContext"
 

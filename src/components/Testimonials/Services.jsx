@@ -1,288 +1,254 @@
 import { feedback } from "../../constants";
 import styles from "../../style";
 import FeedbackCard from "./FeedbackCard";
-import { useTheme } from "../ThemeContext"
+import { useTheme } from "../ThemeContext";
+import { pic6 } from "../../assets";
+import Cards from "../Cards/Cards"
 
 const Testimonials = () => {
   const { theme } = useTheme();
   const textColor = theme === 'light' ? 'text-black' : 'text-white';
-  return(
-  <section
-    id="clients"
-    className={`py-5 ${styles.flexCenter} ${textColor} flex-col relative `}
-  >
-    <div
-  id="services"
-  className="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white dark:bg-[#00040f]"
->
-  <div className="container xl:max-w-6xl mx-auto px-4">
-    {/* Heading start */}
-    <header className="text-center mx-auto mb-12 lg:px-20">
-      <h2 className="text-2xl leading-normal mb-2 font-bold font-poppins text-black dark:text-white">
-        What We Do
-      </h2>
-      <svg
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        x="0px"
-        y="0px"
-        viewBox="0 0 100 60"
-        style={{ margin: "0 auto", height: 35 }}
-        xmlSpace="preserve"
-      >
-        <circle
-          cx="50.1"
-          cy="30.4"
-          r={5}
-          className="stroke-primary"
-          style={{ fill: "transparent", strokeWidth: 2, strokeMiterlimit: 10 }}
-        />
-        <line
-          x1="55.1"
-          y1="30.4"
-          x2={100}
-          y2="30.4"
-          className="stroke-primary"
-          style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
-        />
-        <line
-          x1="45.1"
-          y1="30.4"
-          x2={0}
-          y2="30.4"
-          className="stroke-primary"
-          style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
-        />
-      </svg>
-      <p className="text-gray-500 font-poppins leading-relaxed font-light text-xl mx-auto pb-2 dark:text-white">
-      Powering your  &amp; digital transformation.
-      </p>
-    </header>
-    {/* End heading */}
-    {/* row */}
-    <div className="flex flex-wrap flex-row -mx-4 text-center">
-      <div
-        className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-        data-wow-duration="1s"
-        style={{
-          visibility: "visible",
-          animationDuration: "1s",
-          animationName: "fadeInUp"
-        }}
-      >
-        {/* service block */}
-        <div className="py-8 px-12 mb-12 bg-gray-50 dark:bg-[#00040f]  border-b border-gray-100  dark:border-black transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-secondary mb-4">
-            {/* icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2rem"
-              height="2rem"
-              fill="currentColor"
-              className="bi bi-search"
-              viewBox="0 0 16 16"
-            >
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg>
-          </div>
-          <h3 className="text-lg leading-normal mb-2 font-semibold font-poppins text-black dark:text-white">
-          IT Services
-          </h3>
-          <p className="text-gray-500 font-poppins dark:text-white">
-          Comprehensive support for businesses IT infrastructure and systems
-          </p>
-        </div>
-        {/* end service block */}
-      </div>
-      <div
-        className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-        data-wow-duration="1s"
-        data-wow-delay=".1s"
-        style={{
-          visibility: "visible",
-          animationDuration: "1s",
-          animationDelay: "0.1s",
-          animationName: "fadeInUp"
-        }}
-      >
-        {/* service block */}
-        <div className="py-8 px-12 mb-12 bg-gray-50 dark:bg-[#00040f] border-b border-gray-100 dark:border-black transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-secondary mb-4">
-            {/* icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2rem"
-              height="2rem"
-              fill="currentColor"
-              className="bi bi-chat-square-dots"
-              viewBox="0 0 16 16"
-            >
-              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-              <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-            </svg>
-          </div>
-          <h3 className="text-lg leading-normal mb-2 font-poppins font-semibold text-black dark:text-white">
-          Network Security
-          </h3>
-          <p className="text-gray-500 font-poppins dark:text-white">
-          Protection of networks and data from unauthorized access, misuse, or damage, using firewalls, intrusion detection systems.
-          </p>
-        </div>
-        {/* end service block */}
-      </div>
-      <div
-        className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-        data-wow-duration="1s"
-        data-wow-delay=".3s"
-        style={{
-          visibility: "visible",
-          animationDuration: "1s",
-          animationDelay: "0.3s",
-          animationName: "fadeInUp"
-        }}
-      >
-        {/* service block */}
-        <div className="py-8 px-12 mb-12 bg-gray-50 dark:bg-[#00040f] border-b border-gray-100 dark:border-black transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-secondary mb-4">
-            {/* icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2rem"
-              height="2rem"
-              fill="currentColor"
-              className="bi bi-badge-ad"
-              viewBox="0 0 16 16"
-            >
-              <path d="M3.7 11l.47-1.542h2.004L6.644 11h1.261L5.901 5.001H4.513L2.5 11h1.2zm1.503-4.852l.734 2.426H4.416l.734-2.426h.053zm4.759.128c-1.059 0-1.753.765-1.753 2.043v.695c0 1.279.685 2.043 1.74 2.043.677 0 1.222-.33 1.367-.804h.057V11h1.138V4.685h-1.16v2.36h-.053c-.18-.475-.68-.77-1.336-.77zm.387.923c.58 0 1.002.44 1.002 1.138v.602c0 .76-.396 1.2-.984 1.2-.598 0-.972-.449-.972-1.248v-.453c0-.795.37-1.24.954-1.24z" />
-              <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
-            </svg>
-          </div>
-          <h3 className="text-lg leading-normal mb-2 font-poppins font-semibold text-black dark:text-white">
-          IT Consulting
-          </h3>
-          <p className="text-gray-500 font-poppins dark:text-white">
-          Assisting businesses in planning, implementing, and optimizing their IT infrastructure and strategies.
-          </p>
-        </div>
-        {/* end service block */}
-      </div>
-      <div
-        className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-        data-wow-duration="1s"
-        style={{
-          visibility: "visible",
-          animationDuration: "1s",
-          animationName: "fadeInUp"
-        }}
-      >
-        {/* service block */}
-        <div className="py-8 px-12 mb-12 bg-gray-50 dark:bg-[#00040f] border-b border-gray-100 dark:border-black transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-secondary mb-4">
-            {/* icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2rem"
-              height="2rem"
-              fill="currentColor"
-              className="bi bi-card-checklist"
-              viewBox="0 0 16 16"
-            >
-              <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
-              <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
-            </svg>
-          </div>
-          <h3 className="text-lg leading-normal mb-2 font-poppins font-semibold text-black dark:text-white">
-          Software Development
-          </h3>
-          <p className="text-gray-500 font-poppins dark:text-white">
-          Designing, coding, testing, and deploying custom software applications to meet specific business requirements and enhance productivity.
-          </p>
-        </div>
-        {/* end service block */}
-      </div>
-      <div
-        className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-        data-wow-duration="1s"
-        data-wow-delay=".1s"
-        style={{
-          visibility: "visible",
-          animationDuration: "1s",
-          animationDelay: "0.1s",
-          animationName: "fadeInUp"
-        }}
-      >
-        {/* service block */}
-        <div className="py-8 px-12 mb-12 bg-gray-50 dark:bg-[#00040f] border-b border-gray-100 dark:border-black transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-secondary mb-4">
-            {/* icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2rem"
-              height="2rem"
-              fill="currentColor"
-              className="bi bi-wallet2"
-              viewBox="0 0 16 16"
-            >
-              <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
-            </svg>
-          </div>
-          <h3 className="text-lg leading-normal mb-2 font-poppins font-semibold text-black dark:text-white">
-          Technical Support
-          </h3>
-          <p className="text-gray-500 font-poppins dark:text-white">
-          Troubleshooting and resolving technical issues, either remotely or on-site, to maintain optimal performance and minimize downtime.
-          </p>
-        </div>
-        {/* end service block */}
-      </div>
-      <div
-        className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-        data-wow-duration="1s"
-        data-wow-delay=".3s"
-        style={{
-          visibility: "visible",
-          animationDuration: "1s",
-          animationDelay: "0.3s",
-          animationName: "fadeInUp"
-        }}
-      >
-        {/* service block */}
-        <div className="py-8 px-12 mb-12 bg-gray-50 dark:bg-[#00040f] border-b border-gray-100 dark:border-black transform transition duration-300 ease-in-out hover:-translate-y-2">
-          <div className="inline-block text-secondary mb-4">
-            {/* icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2rem"
-              height="2rem"
-              fill="currentColor"
-              className="bi bi-funnel"
-              viewBox="0 0 16 16"
-            >
-              <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
-            </svg>
-          </div>
-          <h3 className="text-lg leading-normal mb-2 font-poppins font-semibold text-black dark:text-white">
-          Systems Integration 
-          </h3>
-          <p className="text-gray-500 font-poppins dark:text-white">
-          Connecting and synchronizing various IT systems, software, and databases to ensure seamless and efficient data flow.
-          </p>
-        </div>
-        {/* end service block */}
-      </div>
-    </div>
-    {/* end row */}
-  </div>
-</div>
 
-
-    {/* <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
-      {feedback.map((card) => (
-        <FeedbackCard key={card.id} {...card} />
-      ))}
-    </div> */}
-  </section>
-)};
+  return (
+    <section id="clients" className={`py-5 ${styles.flexCenter} ${textColor} flex-col relative `}>
+      <div id="services" className="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white dark:bg-[#00040f]">
+        <div className="container xl:max-w-6xl mx-auto px-4">
+          {/* Heading start */}
+          <header className="text-center mx-auto mb-12 lg:px-20">
+            <h2 className="text-2xl leading-normal mb-2 font-bold font-poppins text-black dark:text-white">
+              What We Do
+            </h2>
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 60"
+              style={{ margin: "0 auto", height: 35 }}
+              xmlSpace="preserve"
+            >
+              <circle
+                cx="50.1"
+                cy="30.4"
+                r={5}
+                className="stroke-primary"
+                style={{ fill: "transparent", strokeWidth: 2, strokeMiterlimit: 10 }}
+              />
+              <line
+                x1="55.1"
+                y1="30.4"
+                x2={100}
+                y2="30.4"
+                className="stroke-primary"
+                style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
+              />
+              <line
+                x1="45.1"
+                y1="30.4"
+                x2={0}
+                y2="30.4"
+                className="stroke-primary"
+                style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
+              />
+            </svg>
+            <p className="text-gray-500 font-poppins leading-relaxed font-light text-xl mx-auto pb-2 dark:text-white">
+              Powering your &amp; digital transformation.
+            </p>
+          </header>
+          {/* End heading */}
+          {/* row */}
+          <div className="flex flex-wrap flex-row text-center">
+            <div
+              className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp service-block"
+              data-wow-duration="1s"
+              data-wow-delay=".1s"
+              style={{
+                visibility: "visible",
+                animationDuration: "1s",
+                animationDelay: "0.1s",
+                animationName: "fadeInUp"
+              }}
+            >
+              {/* service block */}
+              <Cards
+              imgSrc={pic6} // Pass the image source
+              title="IT Services" // Pass the title
+              description="Comprehensive support for businesses IT infrastructure and systems" // Pass the description
+            />
+               
+              {/* end service block */}
+            </div>
+            <div
+              className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp service-block"
+              data-wow-duration="1s"
+              data-wow-delay=".1s"
+              style={{
+                visibility: "visible",
+                animationDuration: "1s",
+                animationDelay: "0.1s",
+                animationName: "fadeInUp"
+              }}
+            >
+              {/* service block */}
+              <Cards
+              imgSrc={pic6} // Pass the image source
+              title="Network Security" // Pass the title
+              description="Protection of networks and data from unauthorized access, misuse, or damage, using firewalls, intrusion detection systems." // Pass the description
+            />
+                
+              {/* end service block */}
+            </div>
+            <div
+              className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp service-block"
+              data-wow-duration="1s"
+              data-wow-delay=".3s"
+              style={{
+                visibility: "visible",
+                animationDuration: "1s",
+                animationDelay: "0.3s",
+                animationName: "fadeInUp"
+              }}
+            >
+              {/* service block */}
+              <Cards
+              imgSrc={pic6} // Pass the image source
+              title="IT Consulting" // Pass the title
+              description="Assisting businesses in planning, implementing, and optimizing their IT infrastructure and strategies." // Pass the description
+            />
+                
+              {/* end service block */}
+            </div>
+            <div
+              className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp service-block"
+              data-wow-duration="1s"
+              data-wow-delay=".3s"
+              style={{
+                visibility: "visible",
+                animationDuration: "1s",
+                animationDelay: "0.3s",
+                animationName: "fadeInUp"
+              }}
+            >
+              {/* service block */}
+              <Cards
+              imgSrc={pic6} // Pass the image source
+              title="Quality Assurance" // Pass the title
+              description="Ensuring the quality and reliability of software and IT systems through rigorous testing and QA processes." // Pass the description
+            />
+                
+              </div>
+              {/* end service block */}
+            <div
+              className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp service-block"
+              data-wow-duration="1s"
+              data-wow-delay=".5s"
+              style={{
+                visibility: "visible",
+                animationDuration: "1s",
+                animationDelay: "0.5s",
+                animationName: "fadeInUp"
+              }}
+            >
+              {/* service block */}
+              <Cards
+              imgSrc={pic6} // Pass the image source
+              title="Data Analytics" // Pass the title
+              description="Extracting valuable insights and patterns from data to make informed business decisions." // Pass the description
+            />
+                
+              {/* end service block */}
+            </div>
+            <div
+              className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp service-block"
+              data-wow-duration="1s"
+              data-wow-delay=".5s"
+              style={{
+                visibility: "visible",
+                animationDuration: "1s",
+                animationDelay: "0.5s",
+                animationName: "fadeInUp"
+              }}
+            >
+              {/* service block */}
+              <Cards
+              imgSrc={pic6} // Pass the image source
+              title="Customer Support" // Pass the title
+              description="Providing prompt and effective assistance to customers to address their queries and issues." // Pass the description
+            />
+               
+              {/* end service block */}
+            </div>
+          </div>
+          {/* end row */}
+        </div>
+      </div>
+      {/* Feedback section */}
+      <div
+        className={`${
+          theme === "light" ? "bg-gray-100 dark:bg-[#00040f]" : "bg-[#00040f] dark:bg-[#08060eb2]"
+        } relative py-20 mt-20`}
+      >
+        <div className="container xl:max-w-6xl mx-auto px-4">
+          {/* Heading */}
+          <header className="text-center mx-auto mb-12 lg:px-20">
+            <h2 className="text-2xl leading-normal mb-2 font-bold font-poppins text-black dark:text-white">
+              Client Feedback
+            </h2>
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 60"
+              style={{ margin: "0 auto", height: 35 }}
+              xmlSpace="preserve"
+            >
+              <circle
+                cx="50.1"
+                cy="30.4"
+                r={5}
+                className="stroke-primary"
+                style={{ fill: "transparent", strokeWidth: 2, strokeMiterlimit: 10 }}
+              />
+              <line
+                x1="55.1"
+                y1="30.4"
+                x2={100}
+                y2="30.4"
+                className="stroke-primary"
+                style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
+              />
+              <line
+                x1="45.1"
+                y1="30.4"
+                x2={0}
+                y2="30.4"
+                className="stroke-primary"
+                style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
+              />
+            </svg>
+            <p className="text-gray-500 font-poppins leading-relaxed font-light text-xl mx-auto pb-2 dark:text-white">
+              Here's what our clients have to say about our services.
+            </p>
+          </header>
+          {/* End heading */}
+          {/* Feedback cards */}
+          <div
+            className={`grid gap-8 ${
+              feedback.length > 2 ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" : "grid-cols-1"
+            } `}
+          >
+             {feedback.map((card) => (
+          <FeedbackCard key={card.id} {...card} />
+        ))}
+          </div>
+          {/* End Feedback cards */}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Testimonials;

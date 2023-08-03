@@ -8,13 +8,13 @@ const FeatureCard = ({ icon, title, content, index }) => {
   const { theme } = useTheme();
   const textColor = theme === 'light' ? 'text-black' : 'text-white';
 
-  console.log("handleMouseEnter");
+ 
 
   return (
     <div
       className={`flex flex-row p-6 rounded-[20px] ${textColor} ${
         index !== features.length - 1 ? "mb-6" : "mb-0 "
-      } feature-card`}
+      } feature-card `}
       style={{
         animation: `fadeInRight 0.3s ease ${index * 0.35}s both`,
       }}
@@ -76,7 +76,7 @@ const Business = () => {
           futuristic IoT solutions that prioritize community value creation. Our mission is to leverage the power of automation, robotics, custom electronics, and touchless solutions to revolutionize industries and improve the lives of individuals.
         </p>
       </div>
-      <div className={`${layout.sectionImg} flex-col fade-in-enter-from-right`}>
+      <div className={`${layout.sectionImg} flex-col fade-in-enter-from-right `}>
         {isVisible && // Only render FeatureCard components when the section is in view
           features.map((feature, index) => (
             <FeatureCard key={index} {...feature} index={index} />

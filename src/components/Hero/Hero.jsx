@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 ${theme === "dark" ? "enter-from-left-dark" : "enter-from-left-light"}`}>
+      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 enter-from-left`}>
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className={`flex-1 font-poppins font-semibold ss:text-[72px] ${textColor} text-[52px]  ss:leading-[100.8px] leading-[75px]`}>
             Unleashing the <br className="sm:block hidden" />{" "}
@@ -40,7 +40,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative fade-in-enter-from-right`} style={{ background: "transparent" }}>
+      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative enter-from-right`} style={{ background: "transparent" }}>
         <Carousel
           autoPlay={true}
           interval={4000}

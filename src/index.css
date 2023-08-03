@@ -136,7 +136,10 @@
 
 
 .feature-card:hover {
-  background: var(--black-gradient);
+  background: linear-gradient(45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
+  transform: scale(1.1);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
   box-shadow: var(--card-shadow);
 }
 
@@ -149,7 +152,10 @@
 }
 
 .feedback-card:hover {
-  background: var(--black-gradient);
+  background: linear-gradient(45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
+  transform: scale(1.1);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
 }
 
 .blue__gradient {
@@ -168,8 +174,8 @@
 }
 
 /* Add this to your CSS file or style section */
-.enter-from-left-light,
-.enter-from-left-dark {
+.enter-from-left
+ {
   animation: enterFromLeftAnimation 1s forwards;
 }
 
@@ -185,11 +191,11 @@
 }
 
 /* Add this to your CSS file or style section */
-.fade-in-enter-from-right {
-  animation: fadeInEnterFromRightAnimation 1s forwards;
+.enter-from-right {
+  animation: enterFromRightAnimation 1s forwards;
 }
 
-@keyframes fadeInEnterFromRightAnimation {
+@keyframes enterFromRightAnimation {
   from {
     transform: translateX(100%);
     opacity: 0;
@@ -241,4 +247,147 @@
 .animate-fadeIn {
   /* Add your fadeIn animation styles here */
   animation: fadeIn 1s ease both;
+}
+
+.exit-to-left {
+  animation: exitToLeft 0.3s ease;
+}
+
+@keyframes exitToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+
+.exit-to-right {
+  animation: exitToRight 0.3s ease;
+}
+
+@keyframes exitToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+
+
+//Feature Card CSS -->
+
+.container .card .icon {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #2c73df;
+}
+
+.container .card .icon .fa {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 50px;
+color: #fff;
+}
+
+.container .card .slide {
+width: 300px;
+height: 200px;
+transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1;
+transition: .7s;
+transform: translateY(100px);
+}
+
+.container .card:hover .slide.slide1{
+transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+box-sizing: border-box;
+transition: .8s;
+transform: translateY(-100px);
+box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.container .card:hover .slide.slide2{
+transform: translateY(0);
+}
+
+.container .card .slide.slide2::after{
+content: "";
+position: absolute;
+width: 30px;
+height: 4px;
+bottom: 15px;
+left: 50%;
+left: 50%;
+transform: translateX(-50%);
+background: #2c73df;
+}
+
+.container .card .slide.slide2 .content p {
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+.container .card .slide.slide2 .content h3 {
+margin: 0 0 10px 0;
+padding: 0;
+font-size: 24px;
+text-align: center;
+} 
+
+.cardbg{
+  background: linear-gradient(45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%); 
+  box-shadow: inset rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  }
+
+
+/* Add this CSS to show the content on hover */
+#services:hover .service-block {
+  display: block;
+}
+
+/* Add this media query to hide the content on mobile view */
+@media (max-width: 768px) {
+
+  #services .service-block {
+    display: block;
+  }
+
+  .container .card .slide.slide2 {
+  margin-bottom: 40px;
+transform: translateY(75px);
+}
+
+.feedback-card {
+  background: linear-gradient(45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
+}
+
 }
