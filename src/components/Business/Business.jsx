@@ -16,7 +16,7 @@ const FeatureCard = ({ icon, title, content, index }) => {
         index !== features.length - 1 ? "mb-6" : "mb-0 "
       } feature-card `}
       style={{
-        animation: `fadeInRight 0.3s ease ${index * 0.35}s both`,
+        animation: `fadeInRight 0.3s ease ${index === 0 ? "0.35s" : `calc(${index * 0.35}s + 0.35s)`} both`,
       }}
       key={index}
     >
