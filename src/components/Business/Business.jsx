@@ -69,11 +69,11 @@ const Business = () => {
     <section id="features" className={layout.section}>
       <div key={fadeInSectionKey} className={`${layout.sectionInfo} ${textColor} animate-fadeIn`} style={{ opacity: isVisible ? 1 : 0 }}>
         <h2 className={styles.heading2}>
-          At Teqard Labs, <br className="sm:block hidden" />
-          we are committed to building
+        Empowering Communities <br className="sm:block hidden" />
+        through Futuristic IoT Solutions
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          futuristic IoT solutions that prioritize community value creation. Our mission is to leverage the power of automation, robotics, custom electronics, and touchless solutions to revolutionize industries and improve the lives of individuals.
+        At Teqard Labs, we are committed to building futuristic IoT solutions that prioritize community value creation. Our mission is to leverage the power of automation, robotics, custom electronics, and touchless solutions to revolutionize industries and improve the lives of individuals.
         </p>
       </div>
       <div className={`${layout.sectionImg} flex-col fade-in-enter-from-right `}>
