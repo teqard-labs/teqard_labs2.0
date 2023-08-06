@@ -26,17 +26,18 @@ const Hero = () => {
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 enter-from-left`}>
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className={`flex-1 font-poppins font-semibold ss:text-[72px] text-[32px] ${textColor}  ss:leading-[100.8px] leading-[60px]`}>
-            Unleashing the <br className="sm:block hidden" />{" "}
-            <span className={theme === "dark" ? "text-secondary" : "text-secondary"}> Potential</span>{" "}
+          Empowering the
+ <br className="sm:block hidden" />{" "}
+            <span className={theme === "dark" ? "text-secondary" : "text-secondary"}> Connected</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0"></div>
         </div>
 
         <h1 className={`font-poppins font-semibold ss:text-[68px] text-[32px] ${textColor} ss:leading-[100.8px] leading-[60px] w-full`}>
-          of technology.
+        Future.
         </h1>
         <p className={`${textColor} ${styles.paragraph}  max-w-[470px]  mt-5`}>
-          Our company helps businesses leverage the power of technology to optimize processes, increase efficiency, and achieve their goals.
+        Our dedicated team of experts is committed to providing tailored technology solutions that align with our clients' unique needs, enabling them to stay ahead in today's dynamic market.
         </p>
       </div>
 

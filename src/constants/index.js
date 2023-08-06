@@ -66,7 +66,7 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+      "IT services drive technology's potential for business success, just as money requires skilled management.",
     name: "Herman Jensen",
     title: "Founder & Leader",
     img: people01,
@@ -74,7 +74,7 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      "Enabling successful digital transformation and business growth.",
     name: "Steve Mark",
     title: "Founder & Leader",
     img: people02,
@@ -82,7 +82,7 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
+      "Your strategic partner for seamless technology integration and optimized business processes.",
     name: "Kenn Gallagher",
     title: "Founder & Leader",
     img: people03,
