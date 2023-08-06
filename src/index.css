@@ -396,3 +396,29 @@ text-align: center;
 }
 
 }
+
+/* ThemeToggleSlide CSS --> */
+/* Add or update these styles in your CSS file or styles module */
+
+.slider-container{
+  width: 4.5rem;
+  height: 1.3rem;
+  background-color: black;
+  border-radius: 9999px;
+  transition: width 0.3s ease-in-out;
+  box-shadow: inset 0 0 30px #cfc9be;
+
+}
+
+.slide-toggle-light {
+  width: 100px; /* Adjust the width as needed */
+  transform: translateX(25px);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.slide-toggle-dark {
+  width: 70px; /* Adjust the width as needed */
+  transition: transform 0.3s ease-in-out;
+}
+

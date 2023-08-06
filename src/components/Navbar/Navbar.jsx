@@ -2,6 +2,7 @@ import { useState } from "react";
 import { close, logo, menu } from "../../assets";
 import { navLinks } from "../../constants";
 import ThemeToggleButton from "../ThemeToggleButton";
+import ThemeToggleSlide from "../ThemeToggleSlide";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -27,7 +28,7 @@ const Navbar = () => {
         ))}
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <ThemeToggleButton />
+        <ThemeToggleButton/>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -37,18 +38,18 @@ const Navbar = () => {
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
         />
-
+      <ThemeToggleButton/> //Need more surpervision
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg-blue-400 z-20 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimblack"
+                  active === nav.title ? "text-dimblack" : "text-white"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"} ${
                   active === nav.title ? "active-item" : ""
                 }`}
@@ -57,6 +58,7 @@ const Navbar = () => {
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
+
           </ul>
         </div>
       </div>
