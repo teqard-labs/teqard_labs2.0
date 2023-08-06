@@ -32,10 +32,10 @@ const CardDeal = () => {
     <section className={layout.section} ref={sectionRef}>
       <div className={`${layout.sectionInfo} ${textColor} ${isVisible ? 'enter-from-left' : ''}`}>
         <h2 className={styles.heading2}>
-        Driving Digital Transformation for Tangible Growth.
+        Fueling tangible growth with driving digital transformation.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Our expertise specializes in delivering innovative solutions that optimize operational efficiency and empower organizations to adapt to the ever-evolving digital landscape, all backed by our deep industry expertise and contextual understanding.
+        Leveraging deep industry expertise to deliver innovative solutions that drive operational efficiency and enable seamless adaptation to the dynamic digital landscape.
         </p>
       </div>
       <div className={`${layout.sectionImg} ${isVisible ? 'enter-from-right' : ''}`}>

@@ -41,10 +41,10 @@ const Billing = () => {
 
       <div className={`${layout.sectionInfo} ${textColor} ${isVisible ? 'enter-from-right' : ''}`}>
         <h2 className={styles.heading2}>
-          We build <br className="sm:block hidden" /> greater futures
+        Empowering growth through innovative<br className="sm:block hidden" /> solutions.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          We provide IT services and business solutions organization that has been partnering with many business organizations in their transformation journeys.
+        Accelerating business success through tailored IT services and transformative solutions for a wide range of organizations.
         </p>
       </div>
     </section>
