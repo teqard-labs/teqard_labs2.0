@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://teqard-labs.github.io/teqard_labs2.0/",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

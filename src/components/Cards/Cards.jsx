@@ -1,5 +1,4 @@
 import React from "react";
-import { pic6 } from "../../assets";
 import { useTheme } from "../ThemeContext";
 
 const Cards = ({ imgSrc, title, description }) => {

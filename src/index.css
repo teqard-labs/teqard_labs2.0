@@ -383,11 +383,16 @@ text-align: center;
 
   .container .card .slide.slide2 {
   margin-bottom: 40px;
-transform: translateY(75px);
 }
 
 .feedback-card {
   background: linear-gradient(45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
+}
+
+.container .card .slide.slide1,
+.container .card .slide.slide2 {
+  transition: none;
+  transform: translateY(0);
 }
 
 }

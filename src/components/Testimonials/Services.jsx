@@ -73,8 +73,8 @@ const Testimonials = () => {
               {/* service block */}
               <Cards
               imgSrc={pic6} // Pass the image source
-              title="IT Services" // Pass the title
-              description="Comprehensive support for businesses IT infrastructure and systems" // Pass the description
+              title="IoT Concept Sketching" // Pass the title
+              description="Creating visual representations of IoT device ideas and functionalities." // Pass the description
             />
                
               {/* end service block */}
@@ -93,8 +93,8 @@ const Testimonials = () => {
               {/* service block */}
               <Cards
               imgSrc={pic6} // Pass the image source
-              title="Network Security" // Pass the title
-              description="Protection of networks and data from unauthorized access, misuse, or damage, using firewalls, intrusion detection systems." // Pass the description
+              title="IoT Electronics" // Pass the title
+              description="Designing the electronic components and circuits for IoT devices." // Pass the description
             />
                 
               {/* end service block */}
@@ -113,8 +113,8 @@ const Testimonials = () => {
               {/* service block */}
               <Cards
               imgSrc={pic6} // Pass the image source
-              title="IT Consulting" // Pass the title
-              description="Assisting businesses in planning, implementing, and optimizing their IT infrastructure and strategies." // Pass the description
+              title="Wireless IoT Technologies" // Pass the title
+              description="Implementing wireless communication protocols for seamless IoT connectivity." // Pass the description
             />
                 
               {/* end service block */}
@@ -133,8 +133,8 @@ const Testimonials = () => {
               {/* service block */}
               <Cards
               imgSrc={pic6} // Pass the image source
-              title="Quality Assurance" // Pass the title
-              description="Ensuring the quality and reliability of software and IT systems through rigorous testing and QA processes." // Pass the description
+              title="IoT Prototyping" // Pass the title
+              description=" Building functional prototypes of IoT devices to test and validate their performance." // Pass the description
             />
                 
               </div>
@@ -153,8 +153,8 @@ const Testimonials = () => {
               {/* service block */}
               <Cards
               imgSrc={pic6} // Pass the image source
-              title="Data Analytics" // Pass the title
-              description="Extracting valuable insights and patterns from data to make informed business decisions." // Pass the description
+              title="IoT Design for Manufacturing" // Pass the title
+              description=" Optimizing IoT device designs for efficient and cost-effective manufacturing." // Pass the description
             />
                 
               {/* end service block */}
@@ -173,8 +173,8 @@ const Testimonials = () => {
               {/* service block */}
               <Cards
               imgSrc={pic6} // Pass the image source
-              title="Customer Support" // Pass the title
-              description="Providing prompt and effective assistance to customers to address their queries and issues." // Pass the description
+              title="Full-scale IoT Manufacturing" // Pass the title
+              description="Mass-producing IoT devices for widespread distribution and commercialization." // Pass the description
             />
                
               {/* end service block */}
