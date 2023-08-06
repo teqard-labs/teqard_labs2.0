@@ -42,16 +42,16 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Access to Expertise",
+    title: "Predictive Analytics",
     content:
-      "Partnering with us gives you access to a team of skilled professionals with diverse expertise in IT services and solutions",
+      "By analyzing historical data and patterns, IoT solutions can predict future trends and behaviors, helping businesses optimize operations, anticipate customer needs, and make proactive decisions.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "Improved Efficiency",
+    title: "Enhanced Customer Experience",
     content:
-      " Our services can enhance business efficiency by automating processes and ensuring seamless integration between systems",
+      " IoT can be leveraged to provide personalized and tailored experiences to customers, leading to increased satisfaction and loyalty.",
   },
   {
     id: "feature-3",
