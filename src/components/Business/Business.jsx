@@ -72,8 +72,8 @@ const Business = () => {
         Empowering Communities <br className="sm:block hidden" />
         through Futuristic IoT Solutions
         </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        At Teqard Labs, we are committed to building futuristic IoT solutions that prioritize community value creation. Our mission is to leverage the power of automation, robotics, custom electronics, and touchless solutions to revolutionize industries and improve the lives of individuals.
+        <p className={`${styles.paragraph} max-w-[600px] mt-5`}>
+        At Teqard Labs Pvt Ltd., we are the driving force behind innovation in the world of technology. Our passion for cutting-edge solutions and our commitment to excellence have established us as a trusted partner for businesses and individuals seeking expertise in embedded design, firmware development, IoT devices, industrial automation, R&D projects, and enlightening technical workshops.
         </p>
       </div>
       <div className={`${layout.sectionImg} flex-col fade-in-enter-from-right `}>

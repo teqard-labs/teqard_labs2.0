@@ -2,7 +2,7 @@ import { useState } from "react";
 import { close, logo, menu } from "../../assets";
 import { navLinks } from "../../constants";
 import ThemeToggleButton from "../ThemeToggleButton";
-import ThemeToggleSlide from "../ThemeToggleSlide";
+
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -27,8 +27,8 @@ const Navbar = () => {
           </li>
         ))}
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <ThemeToggleButton/>
+        {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ThemeToggleButton/> */}
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -38,7 +38,7 @@ const Navbar = () => {
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
         />
-      <ThemeToggleButton/> //Need more surpervision
+      {/* <ThemeToggleButton/> //Need more surpervision */}
         <div
           className={`${
             !toggle ? "hidden" : "flex"
