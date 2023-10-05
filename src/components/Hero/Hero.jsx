@@ -36,8 +36,8 @@ const Hero = () => {
         <h1 className={`font-poppins font-semibold ss:text-[68px] text-[35px] ${textColor} ss:leading-[100.8px] leading-[50px] w-full`}>
           Future.
         </h1>
-        <p className={`${textColor} ${styles.paragraph}  max-w-[470px]  mt-5`}>
-          Our dedicated team of experts is committed to providing tailored technology solutions that align with our clients' unique needs, enabling them to stay ahead in today's dynamic market.
+        <p className={`${textColor} ${styles.paragraph}  max-w-[700px]  mt-5`}>
+          At Teqard Labs Pvt Ltd., we are the driving force behind innovation in the world of technology. Our passion for cutting-edge solutions and our commitment to excellence have established us as a trusted partner for businesses and individuals seeking expertise in embedded design, firmware development, IoT devices, industrial automation, R&D projects, and enlightening technical workshops.
         </p>
       </div>
 

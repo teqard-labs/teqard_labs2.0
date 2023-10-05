@@ -554,13 +554,11 @@ text-align: center;
 }
 
 .overlay {
-  width: 118px;
+  width: 108px;
   position: absolute;
-  height: 118px;
+  height: 108px;
   border-radius: 50%;
   background: var(--bg-color);
-  top: 70px;
-  left: 40px;
   z-index: 0;
   transition: transform 0.3s ease-out;
 }

@@ -57,15 +57,15 @@ function HCards() {
 
     return (
         <div>
-            <p className="mt-2 text-2xl sm:text-4xl mb-10 text-center text-gray-700 font-extrabold capitalize tracking-wide">Our Expertise</p>
+            <p className="md:mt-10 mt-2 text-2xl sm:text-4xl mb-10 text-center text-gray-700 font-extrabold capitalize tracking-wide">Our Expertise</p>
 
             <div className="relative mt-4 lg:mt-0 lg:ml-16 grid grid-cols-1 sm:grid-cols-3 gap-5">
 
                 {Features.map((item, index) => (
                     <div key={index}>
 
-                        <div className="card wallet w-[22vw] h-[55vh] ">
-                            <div className="overlay"></div>
+                        <div className={`card wallet md:w-[22vw] md:h-[55vh] w-full mt-6 ${index === 0 ? "h-[50vh]" : "h-[40vh]"} `}>
+                            <div className={`${index === 0 ? "bottom-[280px] md:top-20" : "top-0 md:top-20" && index === 1 ? "bottom-[220px] md:top-20" : "top-0 md:top-20" }   overlay `}></div>
 
                             <div className='z-10 '><img src={item.icon} className={`${item.style}`} alt="icon" /></div>
                             <p className='z-10 text-xl font-bold mx-3  mt-5'>{item.feat}</p>

@@ -64,7 +64,7 @@ const ImageCarousel = () => {
 
 
   return (
-    <div className="md:my-0 my-10 bg-black enter-from-right">
+    <div className="md:my-0 my-10 z-0 bg-black enter-from-right">
 
       <Carousel
         autoPlay={true}
@@ -84,8 +84,8 @@ const ImageCarousel = () => {
       >
         {overlay.map((item, index) => (
           <div key={index}>
-            <img src={item.pic} className="h-[40vw] relative opacity-40" alt={`Image ${index + 1}`} />
-            <div className={`justify-center flex-1 ${styles.flexCenter} text-white flex-col absolute ${index === 0 ? "top-[100px]" : "top-20"} w-[50vw] left-0 xl:px-0 sm:px-16 px-6 enter-from-left`}>
+            <img src={item.pic} className="h-[50vw] relative opacity-40" alt={`Image ${index + 1}`} />
+            <div className={`justify-center flex-1 ${styles.flexCenter} text-white flex-col absolute ${index === 0 ? "top-[140px]" : "top-28"} w-[50vw] left-0 xl:px-0 sm:px-16 px-6 enter-from-left`}>
               <div className="flex flex-row justify-between items-center w-full h-1/2">
                 <h1 className={`flex-1 font-poppins font-semibold ss:text-[44px] text-[35px] ss:leading-[60px] leading-[50px]`}>
                   {item.text1}
