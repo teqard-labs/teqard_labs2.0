@@ -31,14 +31,12 @@ import pic7 from "./pic7.jpg";
 
 export {
   airbnb,
-  bill,
   binance,
   card,
   coinbase,
   dropbox,
   logo,
   quotes,
-  robot,
   send,
   shield,
   star,
