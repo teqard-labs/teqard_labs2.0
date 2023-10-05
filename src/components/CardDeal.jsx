@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles, { layout } from "../style";
 import { useTheme } from "./ThemeContext";
-import techImage from "../assets/tech.jpg";
 
 const CardDeal = () => {
   const { theme } = useTheme();
