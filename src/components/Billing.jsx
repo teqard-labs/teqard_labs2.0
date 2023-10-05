@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import tech2Image from "../assets/tech2.jpg";
 import styles, { layout } from "../style";
 import { useTheme } from "./ThemeContext";
 
