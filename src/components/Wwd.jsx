@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Team from '../assets/team.png'
 import Solution from '../assets/solution.png'
 import Innovation from '../assets/innovation.png'
@@ -61,8 +61,11 @@ function WhatWeDo() {
         {/* :FEATURES CONTAINER */}
         <div className="relative mt-8 lg:mt-0 lg:ml-16 grid grid-cols-1 sm:grid-cols-2 gap-5">
           {data.map((item, index) => {
+
+            const isMobileView = window.innerWidth <= 640; // Define your mobile breakpoint
+            const isSwitched = isMobileView && (item.id === 4 || item.id === 3);
             return (
-              <div key={item.id} className={`col-span-1 p-5 flex flex-col items-center space-y-2 shadow rounded-md ${index === 0 || index === 3 || index === 4 ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-700"}`}>
+              <div key={item.id} className={`col-span-1 p-5 flex flex-col items-center space-y-2 shadow rounded-md ${isSwitched ? "bg-gray-800 text-white" : ""}  ${index === 0 || index === 3 || index === 4 ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-700"}`}>
                 {/* ::Icon */}
                 <span>
                   {/* Icon goes here */}
