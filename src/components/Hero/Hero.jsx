@@ -26,7 +26,7 @@ const Hero = () => {
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 enter-from-left`}>
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className={`flex-1 font-poppins font-semibold ss:text-[72px] text-[35px] ${textColor}  ss:leading-[100.8px] leading-[50px]`}>
-            Empowering the
+          Innovative Solutions for a
             <br className="sm:block hidden" />{" "}
             <span className={theme === "dark" ? "text-secondary" : "text-secondary"}> Connected</span>{" "}
           </h1>
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         <h1 className={`font-poppins font-semibold ss:text-[68px] text-[35px] ${textColor} ss:leading-[100.8px] leading-[50px] w-full`}>
-          Future.
+        World.
         </h1>
         <p className={`${textColor} ${styles.paragraph}  max-w-[700px]  mt-5`}>
           At Teqard Labs Pvt Ltd., we are the driving force behind innovation in the world of technology. Our passion for cutting-edge solutions and our commitment to excellence have established us as a trusted partner for businesses and individuals seeking expertise in embedded design, firmware development, IoT devices, industrial automation, R&D projects, and enlightening technical workshops.

@@ -42,7 +42,7 @@ function WhatWeDo() {
   ]
 
   return (
-    <div className="relative mx-auto py-8 px-4 w-full max-w-7xl bg-white overflow-hidden">
+    <div id="services" className="relative mx-auto py-8 px-4 w-full max-w-7xl bg-white overflow-hidden">
       <div className=" max-w-sm sm:max-w-none lg:max-w-full flex flex-col lg:flex-row items-center">
 
         {/* :TITLE CONTAINER */}

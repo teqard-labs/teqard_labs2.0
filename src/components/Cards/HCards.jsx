@@ -56,7 +56,7 @@ function HCards() {
     ]
 
     return (
-        <div>
+        <div id="features">
             <p className="md:mt-10 mt-2 text-2xl sm:text-4xl mb-10 text-center text-gray-700 font-extrabold capitalize tracking-wide">Our Expertise</p>
 
             <div className="relative mt-4 lg:mt-0 lg:ml-16 grid grid-cols-1 sm:grid-cols-3 gap-5">
