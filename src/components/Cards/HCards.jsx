@@ -57,15 +57,15 @@ function HCards() {
 
     return (
         <div id="features">
-            <p className="md:mt-10 mt-2 text-2xl sm:text-4xl mb-10 text-center text-gray-700 font-extrabold capitalize tracking-wide">Our Expertise</p>
+            <p className="ss:mt-10 mt-2 text-2xl sm:text-4xl mb-10 text-center text-gray-700 font-extrabold capitalize tracking-wide">Our Expertise</p>
 
             <div className="relative mt-4 lg:mt-0 lg:ml-16 grid grid-cols-1 sm:grid-cols-3 gap-5">
 
                 {Features.map((item, index) => (
                     <div key={index}>
 
-                        <div className={`card wallet md:w-[22vw] md:h-[55vh] w-full mt-6 ${index === 0 ? "h-[50vh]" : "h-[40vh]"} `}>
-                            <div className={`${index === 0 ? "bottom-[280px] md:top-20" : "top-0 md:top-20" && index === 1 ? "bottom-[220px] md:top-20" : "top-0 md:top-20" }   overlay `}></div>
+                        <div className={` relative card wallet ss:w-[22vw] ss:h-[55vh] h-[61vh] w-full mt-6 ${index === 0 ? "h-[50vh]" : "h-[40vh]"} `}>
+                            <div className={`absolute ${index === 0 ? "top-[13px] ss:top-[13px]" : "top-[40px] ss:top-[26px]" } overlay `}></div>
 
                             <div className='z-10 '><img src={item.icon} className={`${item.style}`} alt="icon" /></div>
                             <p className='z-10 text-xl font-bold mx-3  mt-5'>{item.feat}</p>

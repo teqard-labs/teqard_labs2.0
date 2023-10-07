@@ -84,10 +84,10 @@ const ImageCarousel = () => {
       >
         {overlay.map((item, index) => (
           <div key={index}>
-            <img src={item.pic} className="h-[70vw] md:h-[50vw] relative opacity-40" alt={`Image ${index + 1}`} />
-            <div className={`justify-center flex-1 ${styles.flexCenter} text-white flex-col absolute ${index === 0 ? "top-[140px]" : "top-28"} w-[50vw] left-0 xl:px-0 sm:px-16 px-6 enter-from-left`}>
-              <div className="flex flex-row justify-between items-center w-full h-1/2">
-                <h1 className={`flex-1 font-poppins font-semibold ss:text-[44px] text-[35px] ss:leading-[60px] leading-[50px]`}>
+            <img src={item.pic} className="h-[90vw] ss:h-[50vw] relative opacity-40" alt={`Image ${index + 1}`} />
+            <div className={`justify-center flex-1 ${styles.flexCenter} text-white flex-col absolute ${index === 0 ? "ss:top-[140px] top-9 left-[90px]" : "ss:top-28 top-9 left-[90px]"} ss:w-[50vw] w-full left-0 xl:px-0 sm:px-16 px-6 enter-from-left`}>
+              <div className="flex flex-row justify-between items-center w-full">
+                <h1 className={`flex-1 font-poppins font-semibold ss:text-[44px] text-[25px] ss:w-auto  ss:leading-[60px] leading-[28px]`}>
                   {item.text1}
                   <br className="sm:block hidden" />{" "}
                   <span className='text-secondary'> {item.text2}</span>{" "}
@@ -95,10 +95,10 @@ const ImageCarousel = () => {
                 <div className="ss:flex hidden md:mr-4 mr-0"></div>
               </div>
 
-              <h1 className={`font-poppins font-semibold ss:text-[40px] text-[35px] ss:leading-[60px] leading-[50px] w-full`}>
+              <h1 className={`font-poppins font-semibold ss:text-[40px] text-[25px] ss:leading-[60px] leading-[28px] w-[300px] ss:w-full`}>
                 {item.text3}
               </h1>
-              <p className={` ${styles.paragraph}  max-w-[470px]  mt-5`}>
+              <p className={` ${styles.paragraph} leading-[20px] ss:leading-0  ss:max-w-[470px] w-[350px]  mt-5`}>
                 {item.para}
               </p>
               <div className={` ${index === 2 ? "" : "hidden"} mt-7`} >

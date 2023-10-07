@@ -46,7 +46,7 @@ function WhatWeDo() {
       <div className=" max-w-sm sm:max-w-none lg:max-w-full flex flex-col lg:flex-row items-center">
 
         {/* :TITLE CONTAINER */}
-        <div key={fadeInSectionKey} className={`${layout.sectionInfo} animate-fadeIn min-w-[40%]`} style={{ opacity: isVisible ? 1 : 0 }}>
+        <div key={fadeInSectionKey} className={`${layout.sectionInfo} animate-fadeIn ss:min-w-[40%]`} style={{ opacity: isVisible ? 1 : 0 }}>
           {/* Set the width to '60%' to take up more space */}
           <h2 className={styles.heading2}>
             Empowering Communities <br className="sm:block hidden" />
