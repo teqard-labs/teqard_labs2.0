@@ -436,8 +436,8 @@ text-align: center;
 /* button styling */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgb(70, 68, 130, 0.6 );
-  --animation-color: #464482;
+  --text-stroke-color: #805aa6;
+  --animation-color: #805aa6;
   --fs-size: 2em;
   letter-spacing: 3px;
   text-decoration: none;
@@ -470,7 +470,7 @@ text-align: center;
 /* Feature Cards */
 
 .wallet {
-  --bg-color: #3780de;
+  --bg-color: #6f49c9;
   --bg-color-light: #f0e7ff;
   --text-color-hover: #fff;
   --box-shadow-color: rgba(206, 178, 252, 0.48);
@@ -578,12 +578,4 @@ text-align: center;
   color: #fff;
   position: absolute;
   z-index: 1;
-}
-
-.carousel-arrow.prev {
-  left: 10px;
-}
-
-.carousel-arrow.next {
-  right: 10px;
 }

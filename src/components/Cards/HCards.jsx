@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Embed from '../../assets/embed.png'
 import Firmware from '../../assets/firmware.png'
 import IoT from '../../assets/iot.png'
@@ -9,13 +9,45 @@ import Workshop from '../../assets/techwrk.png'
 
 function HCards() {
 
+    const [height, setHeight] = useState(100);
+
+    // Define an array of breakpoints where height will be adjusted
+    const breakpoints = [320,380,400,420,450,480,520,550,620,650,690,720,768,1060,1200,1700]; // Define your desired breakpoints here
+  
+    useEffect(() => {
+      // Function to update the height based on window width
+      const updateHeight = () => {
+        let newHeight = 120; // Default height
+  
+        // Loop through breakpoints and decrease height if window width matches
+        for (const breakpoint of breakpoints) {
+          if (window.innerWidth >= breakpoint) {
+            newHeight -= 6;
+          }
+        }
+  
+        // Update the state with the new height
+        setHeight(newHeight);
+      };
+  
+      // Call the function when the component mounts and when the window resizes
+      updateHeight();
+      window.addEventListener('resize', updateHeight);
+  
+      // Clean up the event listener when the component unmounts
+      return () => {
+        window.removeEventListener('resize', updateHeight);
+      };
+    }, []);
+
+
     const Features = [
         {
             id: 1,
             icon: Embed,
             feat: "Embedded Design",
             desc: "Our seasoned team of engineers specializes in creating embedded systems that power a wide range of applications, from consumer electronics to industrial machinery. We excel in designing custom hardware and software solutions tailored to your specific needs.",
-
+            style: "mb:mt-12 mt-16"
         },
         {
             id: 2,
@@ -29,14 +61,14 @@ function HCards() {
             icon: IoT,
             feat: "IoT Devices",
             desc: "Embrace the future with our IoT expertise. We design and develop IoT solutions that connect devices, collect data, and provide valuable insights to streamline your operations and improve decision-making.",
-
+            
         },
         {
             id: 4,
             icon: Automation,
             feat: "Industrial Automation",
             desc: "We bring automation to the heart of industries. Our solutions optimize processes, increase productivity, and enhance safety. Teqard Labs is your partner in realizing the full potential of automation technologies.",
-
+            
         },
         {
             id: 5,
@@ -50,7 +82,7 @@ function HCards() {
             icon: Workshop,
             feat: "Technical Workshops",
             desc: "Sharing knowledge is key to progress. Teqard Labs conducts enlightening technical workshops, empowering individuals and organizations with the skills and insights needed to thrive in the ever-evolving tech landscape.",
-
+            style: "mt-8 mb:mt-0"
         },
 
     ]
@@ -64,10 +96,10 @@ function HCards() {
                 {Features.map((item, index) => (
                     <div key={index}>
 
-                        <div className={` relative card wallet ss:w-[22vw] ss:h-[55vh] h-[61vh] w-full mt-6 ${index === 0 ? "h-[50vh]" : "h-[40vh]"} `}>
-                            <div className={`absolute ${index === 0 ? "top-[13px] ss:top-[13px]" : "top-[40px] ss:top-[26px]" } overlay `}></div>
+                        <div className={` relative card wallet w-full mt-6 `} style={{ height: `${height}vw` }}>
+                            <div className={`z-10 xs:top-[12vw] xns:top-[15vw] xxs:top-[12vw] md:top-[5.5vw] sms:top-[9vw] ss:top-[12vw]  mb:top-[10vw] overlay `}></div>
 
-                            <div className='z-10 '><img src={item.icon} className={`${item.style}`} alt="icon" /></div>
+                            <div className='z-10  '><img src={item.icon} className={`${item.style}`} alt="icon" /></div>
                             <p className='z-10 text-xl font-bold mx-3  mt-5'>{item.feat}</p>
                             <p className='z-10 text-base font-normal mx-3 mt-5'>{item.desc}</p>
                         </div>
