@@ -94,7 +94,7 @@ const ImageCarousel = () => {
         {overlay.map((item, index) => (
           <div key={index}>
             <img src={item.pic} className="h-[90vw] ss:h-[50vw] relative opacity-40" alt={`Image ${index + 1}`} />
-            <div className={`justify-center flex-1 ${styles.flexCenter} text-white flex-col absolute ${index === 0 ? "ss:top-[120px] top-24 left-[90px]" : index === 1 ? "ss:top-28 top-14 left-[90px]" : "ss:top-20 top-14 left-[90px]" } ss:w-[50vw] w-full left-0 xl:px-0 sm:px-16 px-6 enter-from-left`}>
+            <div className={`justify-center flex-1 ${styles.flexCenter} text-white flex-col absolute ${index === 0 ? "ss:top-[120px] top-24 left-[90px]" : index === 1 ? "ss:top-28 top-14 left-[90px]" : "ss:top-20 top-14 left-[90px]" } ss:w-[50vw] xl:top-[200px] w-full left-0 xl:px-0 sm:px-16 px-6 enter-from-left`}>
               <div className="flex flex-row justify-between items-center w-full">
                 <h1 className={`flex-1 font-poppins font-semibold ss:text-[60px] text-[25px] ss:w-auto  ss:leading-[60px] leading-[28px]`}>
                   {item.text1}

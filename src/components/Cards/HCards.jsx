@@ -47,7 +47,7 @@ function HCards() {
             icon: Embed,
             feat: "Embedded Design",
             desc: "Our seasoned team of engineers specializes in creating embedded systems that power a wide range of applications, from consumer electronics to industrial machinery. We excel in designing custom hardware and software solutions tailored to your specific needs.",
-            style: "mb:mt-12 mt-16"
+            style: "mb:mt-12 mt-16 xl:mt-7"
         },
         {
             id: 2,
@@ -68,7 +68,8 @@ function HCards() {
             icon: Automation,
             feat: "Industrial Automation",
             desc: "We bring automation to the heart of industries. Our solutions optimize processes, increase productivity, and enhance safety. Teqard Labs is your partner in realizing the full potential of automation technologies.",
-            
+            style: "xl:mt-6"
+
         },
         {
             id: 5,
@@ -82,7 +83,7 @@ function HCards() {
             icon: Workshop,
             feat: "Technical Workshops",
             desc: "Sharing knowledge is key to progress. Teqard Labs conducts enlightening technical workshops, empowering individuals and organizations with the skills and insights needed to thrive in the ever-evolving tech landscape.",
-            style: "mt-8 mb:mt-0"
+            style: "mt-8 mb:mt-0 xl:mt-7"
         },
 
     ]
@@ -97,7 +98,7 @@ function HCards() {
                     <div key={index}>
 
                         <div className={` relative card wallet w-full mt-6 `} style={{ height: `${height}vw` }}>
-                            <div className={`z-10 xs:top-[12vw] xns:top-[15vw] xxs:top-[12vw] md:top-[5.5vw] sms:top-[9vw] ss:top-[12vw]  mb:top-[10vw] overlay `}></div>
+                            <div className={`z-10 xs:top-[12vw] xns:top-[15vw] xxs:top-[12vw] md:top-[5.5vw] sms:top-[9vw] ss:top-[12vw] xl:top-[5vw]  mb:top-[10vw] overlay `}></div>
 
                             <div className='z-10  '><img src={item.icon} className={`${item.style}`} alt="icon" /></div>
                             <p className='z-10 text-xl font-bold mx-3  mt-5'>{item.feat}</p>

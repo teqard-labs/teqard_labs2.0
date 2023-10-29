@@ -23,9 +23,9 @@ const Hero = () => {
 
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} -mt-4 `}>
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 enter-from-left`}>
+      <div className={`flex-1 ${styles.flexStart} flex-col xl:pl-9 sm:px-16 px-6 enter-from-left`}>
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className={`flex-1 font-poppins font-semibold ss:text-[72px] text-[35px] ${textColor}  ss:leading-[100.8px] leading-[50px]`}>
+          <h1 className={`flex-1 font-poppins font-semibold ss:text-[72px] xl:text-[68px] text-[35px] ${textColor}  ss:leading-[100.8px] leading-[50px]`}>
           Innovative Solutions for a
             <br className="sm:block hidden" />{" "}
             <span className={theme === "dark" ? "text-secondary" : "text-secondary"}> Connected</span>{" "}
@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="ss:flex hidden md:mr-4 mr-0"></div>
         </div>
 
-        <h1 className={`font-poppins font-semibold ss:text-[68px] text-[35px] ${textColor} ss:leading-[100.8px] leading-[50px] w-full`}>
+        <h1 className={`font-poppins font-semibold ss:text-[68px] xl:text-[68px] text-[35px] ${textColor} ss:leading-[100.8px] leading-[50px] w-full`}>
         World.
         </h1>
         <p className={`${textColor} ${styles.paragraph}  max-w-[700px]  mt-5`}>
